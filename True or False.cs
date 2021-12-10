@@ -5,15 +5,21 @@ namespace True
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(test(30, 0));
-            Console.WriteLine(test(25, 5));
-            Console.WriteLine(test(20, 30));
-            Console.WriteLine(test(20, 25));
+            Console.WriteLine(test(103));
+            Console.WriteLine(test(90));
+            Console.WriteLine(test(89));
             Console.ReadLine();
         }
-        static bool test(int x, int y)
+        static bool test(int x)
         {
-            return x == 30 || y == 30 || (x + y == 30);
+            if (Math.Abs(x - 100) <= 10 || Math.Abs(x - 200) <= 10) 
+                return true;
+            return false;
+
         }
     }
+         
 }
+
+
+
